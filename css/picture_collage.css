@@ -1,0 +1,109 @@
+/* picture_collage.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
+
+.container {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+  }
+
+.row {
+    border: 2px solid black;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+  }
+
+.bottom-row {
+    margin-bottom: 1%;
+}
+
+.row-container {
+    border: 2px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+  }
+
+.navigation {
+    border: 2px solid mediumvioletred;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-container {
+    border: 5px solid rebeccapurple;
+    display: flex;
+    width: 80%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;  /* center items vertically */
+    margin: 0 auto; /* center container horizontally within parent */
+}
+
+.nav-button {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+    color: black;  /* foreground color */
+    padding: 5px;
+    text-decoration: none;  /* no underline for links */
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.portrait, .landscape {
+    flex-grow: 0;
+    height: auto;
+}
+.portrait {
+    max-width: 300px;
+}
+.landscape {
+    max-width: 400px;
+}
+
+.caption p {
+    text-align: center;
+}
+
+.line1 {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+}
+.line2 {
+    font-family: Arial, sans-serif;
+    margin-top: 2pt;
+    font-size: 11pt;
+}
+.line3 {
+    font-family: Arial, sans-serif;
+    margin-top: 1.5pt;
+    font-size: 10pt;
+}
+
+@media (max-width: 767px) {
+    /* Styles for smaller screens */
+}
+@media (min-width: 768px) {
+    /* Styles for larger screens */
+}
