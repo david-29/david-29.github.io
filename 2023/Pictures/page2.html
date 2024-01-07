@@ -1,45 +1,137 @@
-<html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Image Layout</title>
-  <link rel="stylesheet" href="css/picture_collage.css">
   <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/picture_collage.css">
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
+        <div class="image-container">
+          <figure class ="portrait">
+            <a href="images/lewis_clark-l.jpeg" data-lightbox="image-1" data-title="Lewis & Clark Expedition">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/lewis_clark-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/lewis_clark-s.jpeg">
+                <img src="images/lewis_clark-m.jpeg" alt="Lewis & Clark Expedition">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">Lewis & Clark Expedition</span><br>
+              <span class="line2">L&C Nat'l Hist Trail Interp Ctr, Gt Falls</span>
+            </p></figcaption>
+          </figure>
+          <figure class ="landscape">
+            <a href="images/helena_valley-l.jpeg" data-lightbox="image-1" data-title="The Helena Valley from its eastern heights">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/helena_valley-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/helena_valley-s.jpeg">
+                <img src="images/helena_valley-m.jpeg" alt="The Helena Valley from its eastern heights">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">The Helena Valley from its eastern heights</span>
+            </p></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
+        <div class="image-container">
+          <figure class ="landscape">
+            <a href="images/missouri_headwaters-l.jpeg" data-lightbox="image-1" data-title="Headwaters of the Missouri River">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/missouri_headwaters-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/missouri_headwaters-s.jpeg">
+                <img src="images/missouri_headwaters-m.jpeg" alt="Headwaters of the Missouri River">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">Headwaters of the Missouri River</span><br>
+              <span class="line2">confluence of the Gallatin and Jefferson Rivers</span>
+            </p></figcaption>
+          </figure>
+          <figure class ="landscape">
+            <a href="images/berkeley_pit-l.jpeg" data-lightbox="image-1" data-title="Berkeley Pit at Butte">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/berkeley_pit-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/berkeley_pit-s.jpeg">
+                <img src="images/berkeley_pit-m.jpeg" alt="Berkeley Pit at Butte">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">Berkeley Pit at Butte</span><br>
+              <span class="line2">the toxic relic of an open pit copper mine</span>
+            </p></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
+        <div class="image-container">
+          <figure class ="landscape">
+            <a href="images/bison_range-l.jpeg" data-lightbox="image-1" data-title="National Bison Range">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/bison_range-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/bison_range-s.jpeg">
+                <img src="images/bison_range-m.jpeg" alt="National Bison Range">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">National Bison Range</span>
+            </p></figcaption>
+          </figure>
+          <figure class ="landscape">
+            <a href="images/buffalo-l.jpeg" data-lightbox="image-1" data-title="A real, live buffalo -- up close and personal!">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/buffalo-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/buffalo-s.jpeg">
+                <img src="images/buffalo-m.jpeg" alt="A real, live buffalo -- up close and personal!">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">A real, live buffalo -- up close and personal!</span>
+            </p></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
     <div class="row bottom-row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
+        <div class="image-container">
+          <figure class ="landscape">
+            <a href="images/flathead_lake-l.jpeg" data-lightbox="image-1" data-title="Flathead Lake from the west side">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/flathead_lake-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/flathead_lake-s.jpeg">
+                <img src="images/flathead_lake-m.jpeg" alt="Flathead Lake from the west side">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">Flathead Lake from the west side</span>
+            </p></figcaption>
+          </figure>
+          <figure class ="portrait">
+            <a href="images/glacier_park-l.jpeg" data-lightbox="image-1" data-title="Glacier Park near Logan Pass">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/glacier_park-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/glacier_park-s.jpeg">
+                <img src="images/glacier_park-m.jpeg" alt="Glacier Park near Logan Pass">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">Glacier Park near Logan Pass</span><br>
+              <span class="line2">from the Going to the Sun Highway</span>
+            </p></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
     <div class="navigation">

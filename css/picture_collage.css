@@ -41,6 +41,16 @@ html, body {
     align-items: center;
   }
 
+.image-container {
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+}
+
 .navigation {
     border: 2px solid mediumvioletred;
     display: block;
@@ -48,10 +58,11 @@ html, body {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 32px;
 }
 
 .nav-container {
-    border: 5px solid rebeccapurple;
+    /* border: 5px solid rebeccapurple; */
     display: flex;
     width: 80%;
     height: auto;
@@ -67,8 +78,13 @@ html, body {
     color: black;  /* foreground color */
     padding: 5px;
     text-decoration: none;  /* no underline for links */
-    border: 1px solid black;
+    border: 2px solid black;
     display: inline-block;
+}
+
+figure {
+    margin: 0 0 0 0;
+    padding: 5px;
 }
 
 .portrait, .landscape {

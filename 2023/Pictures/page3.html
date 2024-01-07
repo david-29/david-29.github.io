@@ -1,46 +1,141 @@
-<html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Image Layout</title>
-  <link rel="stylesheet" href="css/picture_collage.css">
   <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/picture_collage.css">
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <div class="image-container">
+          <figure class ="landscape">
+            <a href="images/gt_falls_then-l.jpeg" data-lightbox="image-1" data-title="Great Falls of the Missouri -- Then">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/gt_falls_then-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/gt_falls_then-s.jpeg">
+                <img src="images/gt_falls_then-m.jpeg" alt="Great Falls of the Missouri -- Then">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">Great Falls of the Missouri -- Then</span><br>
+              <span class="line2">painting by Charles Fritz</span>
+            </p></figcaption>
+          </figure>
+          <figure class ="landscape">
+            <a href="images/gt_falls_now-l.jpeg" data-lightbox="image-1" data-title="Great Falls of the Missouri -- Now">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/gt_falls_now-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/gt_falls_now-s.jpeg">
+                <img src="images/gt_falls_now-m.jpeg" alt="Great Falls of the Missouri -- Now">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">Great Falls of the Missouri -- Now</span>
+            </p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-container">
+        <figure class ="landscape">
+          <a href="images/hurricane_lee-l.jpeg" data-lightbox="image-1" data-title="Sea Girt Beach, September 15th">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/hurricane_lee-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/hurricane_lee-s.jpeg">
+              <img src="images/hurricane_lee-m.jpeg" alt="Sea Girt Beach, September 15th">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Sea Girt Beach, September 15th</span><br>
+            <span class="line2">Hurricane Lee far offshore</span>
+          </p></figcaption>
         </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/david_tt_max-l.jpeg" data-lightbox="image-1" data-title="Thomas Jr., Dave and Max">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/david_tt_max-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/david_tt_max-s.jpeg">
+              <img src="images/david_tt_max-m.jpeg" alt="Thomas Jr., Dave and Max">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Thomas Jr., Dave and Max</span><br>
+            <span class="line2">at Max's birthday party</span>
+          </p></figcaption>
+        </figure>
+        <figure class ="portrait">
+          <a href="images/max_jr_year-l.jpeg" data-lightbox="image-1" data-title="Max - first day of Junior year">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/max_jr_year-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/max_jr_year-s.jpeg">
+              <img src="images/max_jr_year-m.jpeg" alt="Max - first day of Junior year">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Max - first day of Junior year</span>
+          </p></figcaption>
         </figure>
       </div>
     </div>
     <div class="row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/kitchen1-l.jpeg" data-lightbox="image-1" data-title="The kitchen remodel - Take 1">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/kitchen1-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/kitchen1-s.jpeg">
+              <img src="images/kitchen1-m.jpeg" alt="The kitchen remodel - Take 1">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">The kitchen remodel - Take 1</span>
+          </p></figcaption>
         </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/kitchen2-l.jpeg" data-lightbox="image-1" data-title="The kitchen remodel - Take 2">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/kitchen2-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/kitchen2-s.jpeg">
+              <img src="images/kitchen2-m.jpeg" alt="The kitchen remodel - Take 2">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">The kitchen remodel - Take 2</span>
+          </p></figcaption>
         </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/kitchen3-l.jpeg" data-lightbox="image-1" data-title="The kitchen remodel - Take 3">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/kitchen3-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/kitchen3-s.jpeg">
+              <img src="images/kitchen3-m.jpeg" alt="The kitchen remodel - Take 3">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">The kitchen remodel - Take 3</span>
+          </p></figcaption>
         </figure>
       </div>
     </div>
     <div class="row bottom-row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/christmas_tree-l.jpeg" data-lightbox="image-1" data-title="Merry Christmas from Stratton Mtn, VT!">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/christmas_tree-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/christmas_tree-s.jpeg">
+              <img src="images/christmas_tree-m.jpeg" alt="Merry Christmas from Stratton Mtn, VT!">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Merry Christmas from Stratton Mtn, VT!</span>
+          </p></figcaption>
         </figure>
       </div>
     </div>

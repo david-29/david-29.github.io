@@ -1,51 +1,165 @@
-<html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Image Layout</title>
-  <link rel="stylesheet" href="css/picture_collage.css">
   <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/picture_collage.css">
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/jan_birthday-l.jpeg" data-lightbox="image-1" data-title="Jan at his birthday party">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/jan_birthday-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/jan_birthday-s.jpeg">
+              <img src="images/jan_birthday-m.jpeg" alt="Jan at his birthday party">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Jan at his birthday party</span>
+          </p></figcaption>
         </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/laslo-l.jpeg" data-lightbox="image-1" data-title="Jan's grandson Laslo">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/laslo-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/laslo-s.jpeg">
+              <img src="images/laslo-m.jpeg" alt="Jan's grandson Laslo">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Jan's grandson Laslo</span>
+          </p></figcaption>
         </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/david_carolyn-l.jpeg" data-lightbox="image-1" data-title="Dave and Carolyn">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/david_carolyn-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/david_carolyn-s.jpeg">
+              <img src="images/david_carolyn-m.jpeg" alt="Dave and Carolyn">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Dave and Carolyn</span>
+          </p></figcaption>
         </figure>
       </div>
     </div>
     <div class="row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/carolyn_harrison-l.jpeg" data-lightbox="image-1" data-title="Carolyn and Harrison">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/carolyn_harrison-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/carolyn_harrison-s.jpeg">
+              <img src="images/carolyn_harrison-m.jpeg" alt="Carolyn and Harrison">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Carolyn and Harrison</span><br>
+            <span class="line2">at El Colorado Ski Resort, Chile</span>
+          </p></figcaption>
         </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/harrison_golf-l.jpeg" data-lightbox="image-1" data-title="Harrison golfing">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/harrison_golf-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/harrison_golf-s.jpeg">
+              <img src="images/harrison_golf-m.jpeg" alt="Harrison golfing">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Harrison golfing</span>
+          </p></figcaption>
         </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/camping_tent-l.jpeg" data-lightbox="image-1" data-title="Jan's camping tent">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/camping_tent-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/camping_tent-s.jpeg">
+              <img src="images/camping_tent-m.jpeg" alt="Jan's camping tent">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Jan's camping tent</span>
+          </p></figcaption>
         </figure>
       </div>
     </div>
     <div class="row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/independence_pass-l.jpeg" data-lightbox="image-1" data-title="At Independence Pass, looking down">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/independence_pass-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/independence_pass-s.jpeg">
+              <img src="images/independence_pass-m.jpeg" alt="At Independence Pass, looking down">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">At Independence Pass, looking down</span>
+          </p></figcaption>
         </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="portrait">
+          <a href="images/roaring_creek-l.jpeg" data-lightbox="image-1" data-title="Roaring Creek, above Aspen">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/roaring_creek-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/roaring_creek-s.jpeg">
+              <img src="images/roaring_creek-m.jpeg" alt="Roaring Creek, above Aspen">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Roaring Creek, above Aspen</span>
+          </p></figcaption>
         </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
+        <figure class ="landscape">
+          <a href="images/twin_lakes-l.jpeg" data-lightbox="image-1" data-title="Twin Lakes, Colorado">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/twin_lakes-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/twin_lakes-s.jpeg">
+              <img src="images/twin_lakes-m.jpeg" alt="Twin Lakes, Colorado">
+            </picture>
+          </a>
+          <figcaption class="caption"><p>
+            <span class="line1">Twin Lakes, Colorado</span>
+          </p></figcaption>
         </figure>
       </div>
     </div>
     <div class="row bottom-row">
       <div class="row-container">
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
-        <figure class ="portrait" style="margin: 0 4% 0 2%" >
-        </figure>
+        <div class="image-container">
+          <figure class ="landscape">
+            <a href="images/missouri_gt_falls-l.jpeg" data-lightbox="image-1" data-title="The Mighty Mo at Great Falls, MT">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/missouri_gt_falls-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/missouri_gt_falls-s.jpeg">
+                <img src="images/missouri_gt_falls-m.jpeg" alt="The Mighty Mo at Great Falls, MT">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">The Mighty Mo at Great Falls, MT</span>
+            </p></figcaption>
+          </figure>
+          <figure class ="landscape">
+            <a href="images/russell_elk-l.jpeg" data-lightbox="image-1" data-title="Charles Russell Landscape">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/russell_elk-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/russell_elk-s.jpeg">
+                <img src="images/russell_elk-m.jpeg" alt="Charles Russell Landscape">
+              </picture>
+            </a>
+            <figcaption class="caption"><p>
+              <span class="line1">Charles Russell Landscape</span><br>
+              <span class="line2">C M Russell Museum, Gt. Falls, MT</span>
+            </p></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
     <div class="navigation">
