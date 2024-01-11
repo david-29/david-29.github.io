@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +6,80 @@
   <title>Test Image Layout</title>
   <link rel="stylesheet" href="css/lightbox.css">
   <link rel="stylesheet" href="css/picture_collage.css">
+  <style>    .line1 {      font-family: Arial, sans-serif;      font-size: 12.00pt;    }    .line2 {      font-family: Arial, sans-serif;      font-size: 10.00pt;      margin-top: 1.5pt;    }    .line3 {      font-family: Arial, sans-serif;      font-size: 8.00pt;      margin-top: 1.2pt;    }    .line4 {      font-family: Arial, sans-serif;      font-size: 8.00pt;      margin-top: 1.2pt;    }    .line5 {      font-family: Arial, sans-serif;      font-size: 8.00pt;      margin-top: 1.2pt;    }  </style>
 </head>
 <body>
   <div class="container">
     <div class="row">
+      <div class="row-container">
+        <div class="image-container">
+          <figure class ="landscape">
+            <a href="images/bison_range-l.jpeg" data-lightbox="image-1" data-title="National Bison Range">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/bison_range-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/bison_range-s.jpeg">
+                <img src="images/bison_range-m.jpeg" alt="National Bison Range">
+              </picture>
+            </a>
+            <figcaption class="caption">
+              <p>
+                <span class="line1">National Bison Range</span>
+              </p>
+            </figcaption>
+          </figure>
+          <figure class ="landscape">
+            <a href="images/buffalo-l.jpeg" data-lightbox="image-1" data-title="A real, live buffalo -- up close and personal!">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/buffalo-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/buffalo-s.jpeg">
+                <img src="images/buffalo-m.jpeg" alt="A real, live buffalo -- up close and personal!">
+              </picture>
+            </a>
+            <figcaption class="caption">
+              <p>
+                <span class="line1">A real, live buffalo -- up close and personal!</span>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-container">
+        <div class="image-container">
+          <figure class ="landscape">
+            <a href="images/flathead_lake-l.jpeg" data-lightbox="image-1" data-title="Flathead Lake from the west side">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/flathead_lake-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/flathead_lake-s.jpeg">
+                <img src="images/flathead_lake-m.jpeg" alt="Flathead Lake from the west side">
+              </picture>
+            </a>
+            <figcaption class="caption">
+              <p>
+                <span class="line1">Flathead Lake from the west side</span>
+              </p>
+            </figcaption>
+          </figure>
+          <figure class ="portrait">
+            <a href="images/glacier_park-l.jpeg" data-lightbox="image-1" data-title="Glacier Park near Logan Pass">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/glacier_park-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/glacier_park-s.jpeg">
+                <img src="images/glacier_park-m.jpeg" alt="Glacier Park near Logan Pass">
+              </picture>
+            </a>
+            <figcaption class="caption">
+              <p>
+                <span class="line1">Glacier Park near Logan Pass</span><br>
+                <span class="line2">as seen from the Going to the Sun Highway</span>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="row bottom-row">
       <div class="row-container">
         <div class="image-container">
           <figure class ="landscape">
@@ -21,10 +90,12 @@
                 <img src="images/gt_falls_then-m.jpeg" alt="Great Falls of the Missouri -- Then">
               </picture>
             </a>
-            <figcaption class="caption"><p>
-              <span class="line1">Great Falls of the Missouri -- Then</span><br>
-              <span class="line2">painting by Charles Fritz</span>
-            </p></figcaption>
+            <figcaption class="caption">
+              <p>
+                <span class="line1">Great Falls of the Missouri -- Then</span><br>
+                <span class="line2">(painting by Charles Fritz)</span>
+              </p>
+            </figcaption>
           </figure>
           <figure class ="landscape">
             <a href="images/gt_falls_now-l.jpeg" data-lightbox="image-1" data-title="Great Falls of the Missouri -- Now">
@@ -34,115 +105,19 @@
                 <img src="images/gt_falls_now-m.jpeg" alt="Great Falls of the Missouri -- Now">
               </picture>
             </a>
-            <figcaption class="caption"><p>
-              <span class="line1">Great Falls of the Missouri -- Now</span>
-            </p></figcaption>
+            <figcaption class="caption">
+              <p>
+                <span class="line1">Great Falls of the Missouri -- Now</span>
+              </p>
+            </figcaption>
           </figure>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-container">
-        <figure class ="landscape">
-          <a href="images/hurricane_lee-l.jpeg" data-lightbox="image-1" data-title="Sea Girt Beach, September 15th">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/hurricane_lee-m.jpeg">
-              <source media="(max-width: 767px)" srcset="images/hurricane_lee-s.jpeg">
-              <img src="images/hurricane_lee-m.jpeg" alt="Sea Girt Beach, September 15th">
-            </picture>
-          </a>
-          <figcaption class="caption"><p>
-            <span class="line1">Sea Girt Beach, September 15th</span><br>
-            <span class="line2">Hurricane Lee far offshore</span>
-          </p></figcaption>
-        </figure>
-        <figure class ="portrait">
-          <a href="images/david_tt_max-l.jpeg" data-lightbox="image-1" data-title="Thomas Jr., Dave and Max">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/david_tt_max-m.jpeg">
-              <source media="(max-width: 767px)" srcset="images/david_tt_max-s.jpeg">
-              <img src="images/david_tt_max-m.jpeg" alt="Thomas Jr., Dave and Max">
-            </picture>
-          </a>
-          <figcaption class="caption"><p>
-            <span class="line1">Thomas Jr., Dave and Max</span><br>
-            <span class="line2">at Max's birthday party</span>
-          </p></figcaption>
-        </figure>
-        <figure class ="portrait">
-          <a href="images/max_jr_year-l.jpeg" data-lightbox="image-1" data-title="Max - first day of Junior year">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/max_jr_year-m.jpeg">
-              <source media="(max-width: 767px)" srcset="images/max_jr_year-s.jpeg">
-              <img src="images/max_jr_year-m.jpeg" alt="Max - first day of Junior year">
-            </picture>
-          </a>
-          <figcaption class="caption"><p>
-            <span class="line1">Max - first day of Junior year</span>
-          </p></figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="row">
-      <div class="row-container">
-        <figure class ="portrait">
-          <a href="images/kitchen1-l.jpeg" data-lightbox="image-1" data-title="The kitchen remodel - Take 1">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/kitchen1-m.jpeg">
-              <source media="(max-width: 767px)" srcset="images/kitchen1-s.jpeg">
-              <img src="images/kitchen1-m.jpeg" alt="The kitchen remodel - Take 1">
-            </picture>
-          </a>
-          <figcaption class="caption"><p>
-            <span class="line1">The kitchen remodel - Take 1</span>
-          </p></figcaption>
-        </figure>
-        <figure class ="portrait">
-          <a href="images/kitchen2-l.jpeg" data-lightbox="image-1" data-title="The kitchen remodel - Take 2">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/kitchen2-m.jpeg">
-              <source media="(max-width: 767px)" srcset="images/kitchen2-s.jpeg">
-              <img src="images/kitchen2-m.jpeg" alt="The kitchen remodel - Take 2">
-            </picture>
-          </a>
-          <figcaption class="caption"><p>
-            <span class="line1">The kitchen remodel - Take 2</span>
-          </p></figcaption>
-        </figure>
-        <figure class ="portrait">
-          <a href="images/kitchen3-l.jpeg" data-lightbox="image-1" data-title="The kitchen remodel - Take 3">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/kitchen3-m.jpeg">
-              <source media="(max-width: 767px)" srcset="images/kitchen3-s.jpeg">
-              <img src="images/kitchen3-m.jpeg" alt="The kitchen remodel - Take 3">
-            </picture>
-          </a>
-          <figcaption class="caption"><p>
-            <span class="line1">The kitchen remodel - Take 3</span>
-          </p></figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="row bottom-row">
-      <div class="row-container">
-        <figure class ="portrait">
-          <a href="images/christmas_tree-l.jpeg" data-lightbox="image-1" data-title="Merry Christmas from Stratton Mtn, VT!">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/christmas_tree-m.jpeg">
-              <source media="(max-width: 767px)" srcset="images/christmas_tree-s.jpeg">
-              <img src="images/christmas_tree-m.jpeg" alt="Merry Christmas from Stratton Mtn, VT!">
-            </picture>
-          </a>
-          <figcaption class="caption"><p>
-            <span class="line1">Merry Christmas from Stratton Mtn, VT!</span>
-          </p></figcaption>
-        </figure>
       </div>
     </div>
     <div class="navigation">
       <div class="nav-container">
         <a href="page2.html" class = "nav-button">Back</a>
-        <a href="page1.html" class = "nav-button">Next</a>
+        <a href="page4.html" class = "nav-button">Next</a>
       </div>
     </div>
   </div>

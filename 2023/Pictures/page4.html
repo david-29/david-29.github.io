@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Image Layout</title>
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/picture_collage.css">
+  <style>    .line1 {      font-family: Arial, sans-serif;      font-size: 12.00pt;    }    .line2 {      font-family: Arial, sans-serif;      font-size: 10.00pt;      margin-top: 1.5pt;    }    .line3 {      font-family: Arial, sans-serif;      font-size: 8.00pt;      margin-top: 1.2pt;    }    .line4 {      font-family: Arial, sans-serif;      font-size: 8.00pt;      margin-top: 1.2pt;    }    .line5 {      font-family: Arial, sans-serif;      font-size: 8.00pt;      margin-top: 1.2pt;    }  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="row-container">
+        <figure class ="landscape">
+          <a href="images/hurricane_lee-l.jpeg" data-lightbox="image-1" data-title="Sea Girt Beach, September 15th">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/hurricane_lee-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/hurricane_lee-s.jpeg">
+              <img src="images/hurricane_lee-m.jpeg" alt="Sea Girt Beach, September 15th">
+            </picture>
+          </a>
+          <figcaption class="caption">
+            <p>
+              <span class="line1">Sea Girt Beach, September 15th</span><br>
+              <span class="line2">with Hurricane Lee far offshore</span>
+            </p>
+          </figcaption>
+        </figure>
+        <figure class ="portrait">
+          <a href="images/david_tt_max-l.jpeg" data-lightbox="image-1" data-title="Thomas Jr., Dave and Max">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/david_tt_max-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/david_tt_max-s.jpeg">
+              <img src="images/david_tt_max-m.jpeg" alt="Thomas Jr., Dave and Max">
+            </picture>
+          </a>
+          <figcaption class="caption">
+            <p>
+              <span class="line1">Thomas Jr., Dave and Max</span><br>
+              <span class="line2">(at Max's birthday party)</span>
+            </p>
+          </figcaption>
+        </figure>
+        <figure class ="portrait">
+          <a href="images/max_jr_year-l.jpeg" data-lightbox="image-1" data-title="Max - first day of Junior year">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/max_jr_year-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/max_jr_year-s.jpeg">
+              <img src="images/max_jr_year-m.jpeg" alt="Max - first day of Junior year">
+            </picture>
+          </a>
+          <figcaption class="caption">
+            <p>
+              <span class="line1">Max - first day of Junior year</span>
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-container">
+        <figure class ="portrait">
+          <a href="images/kitchen1-l.jpeg" data-lightbox="image-1" data-title="The kitchen remodel - Take 1">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/kitchen1-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/kitchen1-s.jpeg">
+              <img src="images/kitchen1-m.jpeg" alt="The kitchen remodel - Take 1">
+            </picture>
+          </a>
+          <figcaption class="caption">
+            <p>
+              <span class="line1">The kitchen remodel - Take 1</span>
+            </p>
+          </figcaption>
+        </figure>
+        <figure class ="portrait">
+          <a href="images/kitchen2-l.jpeg" data-lightbox="image-1" data-title="The kitchen remodel - Take 2">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/kitchen2-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/kitchen2-s.jpeg">
+              <img src="images/kitchen2-m.jpeg" alt="The kitchen remodel - Take 2">
+            </picture>
+          </a>
+          <figcaption class="caption">
+            <p>
+              <span class="line1">The kitchen remodel - Take 2</span>
+            </p>
+          </figcaption>
+        </figure>
+        <figure class ="portrait">
+          <a href="images/kitchen3-l.jpeg" data-lightbox="image-1" data-title="The kitchen remodel - Take 3">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/kitchen3-m.jpeg">
+              <source media="(max-width: 767px)" srcset="images/kitchen3-s.jpeg">
+              <img src="images/kitchen3-m.jpeg" alt="The kitchen remodel - Take 3">
+            </picture>
+          </a>
+          <figcaption class="caption">
+            <p>
+              <span class="line1">The kitchen remodel - Take 3</span>
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="row bottom-row">
+      <div class="row-container">
+        <div class="image-container">
+          <figure class ="portrait">
+            <a href="images/christmas_tree-l.jpeg" data-lightbox="image-1" data-title="Merry Christmas from Stratton Mtn, VT!">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/christmas_tree-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/christmas_tree-s.jpeg">
+                <img src="images/christmas_tree-m.jpeg" alt="Merry Christmas from Stratton Mtn, VT!">
+              </picture>
+            </a>
+            <figcaption class="caption">
+              <p>
+                <span class="line1">Merry Christmas from Stratton Mtn, VT!</span>
+              </p>
+            </figcaption>
+          </figure>
+          <figure class ="landscape">
+            <a href="images/hny2024-l.jpeg" data-lightbox="image-1" data-title="Wishing you a Happy New Year!">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/hny2024-m.jpeg">
+                <source media="(max-width: 767px)" srcset="images/hny2024-s.jpeg">
+                <img src="images/hny2024-m.jpeg" alt="Wishing you a Happy New Year!">
+              </picture>
+            </a>
+            <figcaption class="caption">
+              <p>
+                <span class="line1">Wishing you a Happy New Year!</span>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="nav-container">
+        <a href="page3.html" class = "nav-button">Back</a>
+        <a href="page1.html" class = "nav-button">Next</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/lightbox-plus-jquery.js"></script>
+</body>
+</html>
